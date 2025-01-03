@@ -1,0 +1,92 @@
+ .nav-item a  {
+  color: white !important;
+}
+.dropdown-item:hover{
+  color: black !important;
+}
+.slider-item{
+
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+.slick-next{
+  display: none !important;
+}
+.nav-position{
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+
+}
+/* For the slider container */
+.slider-container {
+  position: relative;
+  width: 100%; /* Make it take the full width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* For the movie info section */
+.movie-info {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  background: rgba(76, 76, 76, 0.6); /* Transparent background for better readability */
+  color: #fff; /* Text color */
+  padding: 15px 20px;
+  border-radius: 8px;
+  max-width: 90%; /* Prevents the info box from being too wide */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings and text scaling */
+.movie-info h1 {
+  font-size: 2rem; /* Base size for medium screens */
+  margin-bottom: 10px;
+}
+
+.movie-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.notfound{
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.notfound1{
+  font-size: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+footer {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+footer h5 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
