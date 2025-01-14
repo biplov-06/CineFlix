@@ -13,7 +13,7 @@ const API = ({ movies, error }) => {
       {error ? (
         <p style={{ color: 'red' }}>Error: {error}</p>
       ) : (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
+        <div className='grid-div' >
           {movies.map((movie) => (
             <div key={movie.id} style={{ border: '1px solid #ddd', borderRadius: '8px', padding: '10px' }}>
               <img

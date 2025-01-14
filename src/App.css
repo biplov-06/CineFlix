@@ -20,30 +20,28 @@
   z-index: 1000;
 
 }
-/* For the slider container */
+
 .slider-container {
   position: relative;
-  width: 100%; /* Make it take the full width */
-  height: 100vh; /* Full viewport height */
+  width: 100%;
   overflow: hidden;
 }
 
-/* For the movie info section */
 .movie-info {
   position: absolute;
-  bottom: 2%;
-  left: 2%;
-  background: rgba(76, 76, 76, 0.6); /* Transparent background for better readability */
-  color: #fff; /* Text color */
+  bottom: 20%; /* Align to the bottom of the parent container */
+  left: 2%;   /* Align to the left of the parent container */
+  background: rgba(76, 76, 76, 0.6); 
+  color: #fff;
   padding: 15px 20px;
-  border-radius: 8px;
-  max-width: 90%; /* Prevents the info box from being too wide */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 0; /* Remove border-radius for full corner alignment */
+  width: 70%; /* Make it span the full width of the container */
+  box-shadow: none; /* Optional: remove box-shadow for cleaner look */
 }
 
-/* Headings and text scaling */
+
 .movie-info h1 {
-  font-size: 2rem; /* Base size for medium screens */
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
@@ -89,4 +87,34 @@ footer ul li a:hover {
 
 footer p {
   margin: 0.5rem 0;
+}
+.grid-div{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .movie-info {
+    display: none;
+  }
+  .grid-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1rem;
+  }
+
+}
+@media screen and (min-width: 1400px) {
+  .movie-info {
+    display: block;
+    bottom: 3%; 
+     
+  }
+  .grid-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+
 }
